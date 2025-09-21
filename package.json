@@ -1,0 +1,39 @@
+{
+  "name": "twge-syntax-highlighter",
+  "displayName": "Twilight GameEvents Syntax Highlighter",
+  "description": "Simple syntax highlight for Twilight GameEvents.",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "js-yaml syntaxes/twge.tmLanguage.yaml > syntaxes/twge.tmLanguage.json"
+  },
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "twge",
+        "aliases": [
+          "TWGE"
+        ],
+        "extensions": [
+          ".twge"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "twge",
+        "scopeName": "source.twge",
+        "path": "./syntaxes/twge.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
