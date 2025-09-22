@@ -13,6 +13,9 @@
     },
     {
       "include": "#comments"
+    },
+    {
+      "include": "#metadatas"
     }
   ],
   "repository": {
@@ -21,6 +24,10 @@
         {
           "name": "keyword.twge",
           "match": "\\b(def|block|checks|actions|triggers|if)\\b"
+        },
+        {
+          "name": "keyword.builtin.twge",
+          "match": "\\b(Point)\\b"
         }
       ]
     },
@@ -43,6 +50,14 @@
           "name": "comment.line.double-slash.twge",
           "begin": "//",
           "end": "$"
+        }
+      ]
+    },
+    "metadatas": {
+      "patterns": [
+        {
+          "name": "keyword.twge",
+          "match": "__([\\w]+)__"
         }
       ]
     }
