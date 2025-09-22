@@ -35,5 +35,9 @@
   },
   "devDependencies": {
     "js-yaml": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wcleungaj-60/twge-syntax-highlighter.git"
   }
 }
