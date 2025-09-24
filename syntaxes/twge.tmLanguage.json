@@ -27,7 +27,7 @@
         },
         {
           "name": "keyword.builtin.twge",
-          "match": "\\b(Point)\\b"
+          "match": "\\b(Point|ActorMatch)\\b"
         }
       ]
     },
