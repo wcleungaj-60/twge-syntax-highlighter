@@ -13,7 +13,7 @@ repository:
     - name: keyword.twge
       match: "\\b(def|block|checks|actions|triggers|if|true|false|const)\\b"
     - name: keyword.builtin.twge
-      match: "\\b(Point|ActorMatch)\\b"
+      match: "\\b(Point|ActorMatch|CustomWeapon)\\b"
   strings:
     name: string.quoted.double.twge
     begin: "\""
